@@ -1,0 +1,97 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Helvetica, serif;
+}
+
+
+.todo__holder {
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 10px;
+}
+
+.todo__entry-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo__entry-input {
+    flex: 1;
+    padding: 0 16px;
+    line-height: 44px;
+    font-size: 18px;
+    border: 1px solid darkgray;
+    border-radius: 5px 0 0 5px;
+    appearance: none;
+}
+
+.todo__entry-submit {
+    height: 46px;
+    padding: 0 16px;
+    color: white;
+    font-size: 16px;
+    background-color: forestgreen;
+    border: 1px solid darkgray;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    appearance: none;
+}
+
+.todo__entry-hint {
+    padding: 4px 0 4px 20px;
+    font-size: 11px;
+}
+
+.todo__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+.todo__list:empty {
+    border: 0;
+}
+
+.todo__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 16px;
+    color: black;
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.todo__list-item:last-of-type {
+    border-bottom: 0;
+}
+
+.todo__list-item--done {
+    background-color: darkseagreen;
+}
+
+.todo__button {
+    margin-left: 8px;
+    padding: 4px 12px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.todo__button--done {
+    background-color: forestgreen;
+}
+
+.todo__button--remove {
+    background-color: darkred;
+}
